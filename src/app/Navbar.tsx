@@ -30,6 +30,7 @@ export default function MyNavbar() {
       <Navbar
         isBordered
         isMenuOpen={isMenuOpen}
+        className="fixed"
         onMenuOpenChange={setIsMenuOpen}
       >
         <div className="flex gap-4 items-center">
@@ -37,30 +38,30 @@ export default function MyNavbar() {
           <Dropdown backdrop="blur">
             <DropdownTrigger>
               <Button
-                variant="bordered"
+                variant="light"
               >
                 <IconMenu />
               </Button>
             </DropdownTrigger>
-            <DropdownMenu 
-            aria-label="Multiple selection example"
-        variant="flat"
-        closeOnSelect={false}
-        disallowEmptySelection
-        selectionMode="multiple">
+            <DropdownMenu
+              aria-label="Multiple selection example"
+              variant="flat"
+              closeOnSelect={false}
+              disallowEmptySelection
+              selectionMode="multiple">
 
               <DropdownItem key="new"  >
                 <Tabs aria-label="Options" variant="underlined" color="primary" disableAnimation={false} >
                   <Tab key="photos" title="App">
                     <Card>
-                      <CardBody  className=" w-80" >
+                      <CardBody className=" w-80" >
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                       </CardBody>
                     </Card>
                   </Tab>
                   <Tab key="music" title="Shortcut" >
                     <Card>
-                      <CardBody  className=" w-80">
+                      <CardBody className=" w-80">
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                       </CardBody>
                     </Card>
