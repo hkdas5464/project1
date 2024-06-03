@@ -3,7 +3,7 @@
 import React from "react";
 import { Navbar, NavbarBrand, NavbarMenuToggle, CardBody, Card, NavbarMenuItem, NavbarMenu, NavbarContent, NavbarItem, Link, Button, DropdownItem, DropdownMenu, Avatar, DropdownTrigger, Dropdown, Input, Tabs, Tab } from "@nextui-org/react";
 import { AcmeLogo } from "./logo/AcmeLogo.jsx";
-import { SearchIcon } from './logo/SearchIcon.jsx';
+import  SearchIcon  from './logo/SearchIcon.jsx';
 import IconNotificationsOutline from './logo/Notification.jsx';
 import IconMenu from './icons/MenueIcon.jsx'
 import Icon093Drawer from './icons/DrawerIcon.jsx'
